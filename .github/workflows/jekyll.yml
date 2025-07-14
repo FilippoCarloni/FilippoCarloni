@@ -44,6 +44,8 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y build-essential libpq-dev nodejs
+      - name: Install Jupyter
+        run: pip3 install notebook
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
